@@ -10,53 +10,6 @@ $breakpoints: (
   xl: 1200px,
 );
 
-// Viewports
-$viewports: (
-  // 'null' disable the viewport on a breakpoint
-  sm: 510px,
-  md: 700px,
-  lg: 920px,
-  xl: 1130px
-);
-
-.container,
-.container-fluid {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: var(--spacing);
-  padding-left: var(--spacing);
-}
-
-.container {
-  @if map-get($breakpoints, "sm") {
-    @media (min-width: map-get($breakpoints, "sm")) {
-      max-width: map-get($viewports, "sm");
-      padding-right: 0;
-      padding-left: 0;
-    }
-  }
-
-  @if map-get($breakpoints, "md") {
-    @media (min-width: map-get($breakpoints, "md")) {
-      max-width: map-get($viewports, "md");
-    }
-  }
-
-  @if map-get($breakpoints, "lg") {
-    @media (min-width: map-get($breakpoints, "lg")) {
-      max-width: map-get($viewports, "lg");
-    }
-  }
-
-  @if map-get($breakpoints, "xl") {
-    @media (min-width: map-get($breakpoints, "xl")) {
-      max-width: map-get($viewports, "xl");
-    }
-  }
-}
-
-
 $background: #13171f;
 $background-accent: #252c3a;
 $content-background: $slate-900;
@@ -72,8 +25,6 @@ button {
 	box-shadow: $box-shadow;
 }
 
-
-
 h1 {
     margin: 0;
 }
@@ -81,8 +32,6 @@ h1 {
 h2 {
     margin: 0;
 }
-
-
 
 /* WebKit (Safari, Chrome) */
 ::-webkit-scrollbar {
@@ -239,8 +188,6 @@ h2 {
 }
 
 
-
-
 .hot-items-th {
     display: flex;
     justify-content: space-between;
@@ -252,7 +199,6 @@ h2 {
         display: none;
     }
 }
-
 
 
 #table-search {
