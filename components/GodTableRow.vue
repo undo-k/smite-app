@@ -8,6 +8,7 @@ const god = props.god;
 const name = god.name;
 const winRate = god.win_rate.toFixed(2);
 const banRate = god.ban_rate.toFixed(2);
+const pickRate = god.pick_rate.toFixed(2);
 const role = god.role;
 const hotItems = god.hot_items;
 
@@ -54,27 +55,36 @@ const getImageFileName = (image) => {
 </script>
 
 <template>
-  <tr
+  <tr class="god-table-row"
     v-once
     @click="setGodDetailModel(god)"
   >
     <!--  God Name  -->
     <td colspan="1" class="god-cell">
-      <a href="/">{{ name }}</a>
+      <a :href="'/gods/' + name">{{ name }}</a>
     </td>
+
     <!--  Win Rate  -->
     <td colspan="1" class="rate-cell">
       <span :class="rateClass(winRate)">
         {{ winRate }}
       </span>
     </td>
-    <!--  Role  -->
-    <td colspan="1" class="rate-cell">
+
+    <!--  Ban Rate  -->
+    <td colspan="1" class="rate-cell ban-rate">
       <span :class="rateClass(banRate)">
         {{ banRate }}
       </span>
-      <!-- <img :src="getRoleIcon(role)" :alt="role" /> -->
     </td>
+
+    <!--  Pick Rate  -->
+    <td colspan="1" class="rate-cell pick-rate">
+      <span :class="rateClass(pickRate)">
+        {{ pickRate }}
+      </span>
+    </td>
+
     <!--  Hot Items  -->
     <td colspan="2" class="hot-items-cell">
       <img
@@ -83,9 +93,6 @@ const getImageFileName = (image) => {
           :src="getImageFileName(item)"
           :alt="item.name"
         />
-      <!-- <span class="hot-items-container">
-        
-      </span> -->
     </td>
   </tr>
 </template>
