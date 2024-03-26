@@ -15,3 +15,9 @@ Instructions for running:
 5. `yarn dev` or `yarn dev --host` if you want to view it on mobile
 
 The site should then be running on http://localhost:3000/
+
+
+Demos:
+https://github.com/undo-k/smite-app/smite-one-demo-desktop.webm
+
+https://github.com/undo-k/smite-app/smite-one-demo-mobile.mp4
