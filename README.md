@@ -16,13 +16,3 @@ Instructions for running:
 
 The site should then be running on http://localhost:3000/
 
-
-## Demos:
-
-<video width="320" height="240" controls>
-  <source src="smite-one-demo-desktop.webm" type="video/webm">
-</video>
-
-<video width="320" height="240" controls>
-  <source src="smite-one-demo-mobile.mp4" type="video/mp4">
-</video>
