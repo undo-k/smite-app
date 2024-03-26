@@ -1,21 +1,29 @@
 <script setup>
 import GodTableRow from "@/components/GodTableRow.vue";
 const debugMode = process.env.NODE_ENV === "development";
-const api_url = debugMode
-    ? "http://localhost:8080/api/v2/gods"
-    : "https://web-production-3593.up.railway.app/gods/";
+const api_url = "http://localhost:8080/api/gods";
+// const api_url = debugMode
+//     ? "http://localhost:8080/api/gods"
+//     : "https://web-production-3593.up.railway.app/gods/";
 
-const { data: gods } = await useFetch(api_url);
+const { data: gods } = await useFetch(api_url, {
+  pick: ["data"]
+});
 const filter = ref("");
 const sortingKey = ref("name");
 const sortDescend = ref(true);
 
 
 const filteredGods = computed(() => {
+  // console.log(gods.value)
   const filterValue = filter.value.toLowerCase();
   const key = sortingKey.value;
 
-  let filteredGods = gods.value.filter(
+  console.log(gods.value.data[0])
+
+  // return gods.value;
+
+  let filteredGods = gods.value.data.filter(
     (god) =>
       god.name.toLowerCase().includes(filterValue) ||
       god.role.toLowerCase().includes(filterValue),
