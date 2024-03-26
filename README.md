@@ -19,6 +19,10 @@ The site should then be running on http://localhost:3000/
 
 ## Demos:
 
-https://github.com/undo-k/smite-app/blob/master/smite-one-demo-desktop.webm
+<video width="320" height="240" controls>
+  <source src="smite-one-demo-desktop.webm" type="video/webm">
+</video>
 
-https://github.com/undo-k/smite-app/blob/master/smite-one-demo-mobile.mp4
+<video width="320" height="240" controls>
+  <source src="smite-one-demo-mobile.mp4" type="video/mp4">
+</video>
