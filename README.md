@@ -17,7 +17,8 @@ Instructions for running:
 The site should then be running on http://localhost:3000/
 
 
-Demos:
-https://github.com/undo-k/smite-app/smite-one-demo-desktop.webm
+## Demos:
 
-https://github.com/undo-k/smite-app/smite-one-demo-mobile.mp4
+https://github.com/undo-k/smite-app/blob/master/smite-one-demo-desktop.webm
+
+https://github.com/undo-k/smite-app/blob/master/smite-one-demo-mobile.mp4
