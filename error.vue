@@ -10,6 +10,6 @@ const props = defineProps({
   <div>
     oopsie wooopsie
     <h1>{{ error.statusCode }}</h1>
-    <NuxtLink to="/">Go back home, bitch</NuxtLink>
+    <NuxtLink to="/">Go back home?</NuxtLink>
   </div>
 </template>

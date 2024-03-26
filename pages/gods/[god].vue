@@ -19,7 +19,7 @@ definePageMeta({
 
 <template>
   <div class="god-detail">
-    <h2>waddup bitch, it's {{ name }}</h2>
+    <h2>waddup, it's {{ name }}</h2>
 
   </div>
 </template>
