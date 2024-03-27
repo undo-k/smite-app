@@ -16,3 +16,6 @@ Instructions for running:
 
 The site should then be running on http://localhost:3000/
 
+<img src=./demos/mobile.png />
+
+<img src=./demos/desktop.png />
